@@ -1,0 +1,26 @@
+{
+  "name": "payment-integration",
+  "version": "1.0.0",
+  "description": "Payment Integration - Mercado Livre",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "heroku": "^7.56.1",
+    "mercadopago": "^1.5.8",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alessandrop76/payment-integration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alessandrop76/payment-integration/issues"
+  },
+  "homepage": "https://github.com/alessandrop76/payment-integration#readme"
+}
