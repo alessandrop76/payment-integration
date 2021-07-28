@@ -27,7 +27,7 @@ var emailDoPagador = "victordevtb@gmail.com";
         items: [
             item = {
                 id: id, //UUID ou Date.now()
-                title: '2x Video Games;3x Camisas',
+                title: '1 Beijo do Gordo',
                 quantity: 1,
                 currency_id: 'BRL',
                 unit_price: parseFloat(550)
