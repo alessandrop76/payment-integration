@@ -1,0 +1,8 @@
+integração com Gatway de pagamento - Mercado Pago
+
+- Ter uma conta válida no Mercado pagamento
+
+-npm install express --save
+-npm install mercadopago --save         //SDK propria do mercado pago
+-npm install nodemon --save
+
