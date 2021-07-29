@@ -5,7 +5,9 @@ const MercadoPago = require('mercadopago');
 
 MercadoPago.configure({
     sandbox: true,
-    access_token: "TEST-3260321011293596-061906-6cdf2c22206e79007f91b8f5642b3cf2-267336909"
+     access_token: "TEST-3260321011293596-061906-6cdf2c22206e79007f91b8f5642b3cf2-267336909" //victor udemy
+   // access_token: "TEST-4197772329478898-072918-f951f7239fe2dcf02d4ca4996e733ea5-29194367" //alessandro
+   
 })
 
 
@@ -49,6 +51,11 @@ try {
     console.log(error.message);
 }
     
+})
+
+app.post("/not",(req,res)=>{
+    console.log(req.query);
+    res.send("ok");
 })
 
 const PORT = process.env.PORT || 5000;
