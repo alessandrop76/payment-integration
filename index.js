@@ -57,7 +57,7 @@ app.post("/not",(req,res)=>{
    // console.log(req.query);
    var id = req.query.id;
    
-   setTimeout(()=>{
+   setTimeout(()=>{                        //tratando o retorno de confirmação do pagamento após 20 segundos
     var filtro = {
         "order.id": id
     }
@@ -65,11 +65,17 @@ app.post("/not",(req,res)=>{
     MercadoPago.payment.search({
         qs: filtro
     }).then(data =>{
+        var pagamento = data.results[0];
+        if(pagamento != undefined){
+            console.log(pagamento);
+        }else{
+            console.log("Pagamento não existe");
+        }
         console.log(data);
     }).catch(err =>{
         console.log(err);
     });
-    
+
    },20000)
     res.send("ok");
 })
